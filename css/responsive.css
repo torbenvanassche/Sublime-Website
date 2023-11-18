@@ -1,0 +1,394 @@
+/* Cigawel Barber and Saloon HTML5 Template */
+
+@media only screen and (max-width: 1400px){
+	.two-column-fluid .image-column,
+	.two-column-fluid .content-column{
+		width:50%;	
+	}
+}
+
+@media only screen and (max-width: 1140px){
+	
+	.main-header .nav-outer{
+		padding-right:120px;	
+	}
+	
+	.main-header .call-btn{
+		display:none;	
+	}
+	
+	.main-header .search-box-btn{
+		right:15px;	
+	}
+	
+	.main-header .shop-cart-btn{
+		right:60px;	
+	}
+	
+	.main-menu .navigation > li{
+		margin:0px 10px;
+	}
+	
+	.blog-news-section{
+		padding-right:0px !important;	
+	}
+	
+	.two-column-fluid .image-column,
+	.two-column-fluid .content-column{
+		position:relative;
+		width:100%;
+		background:none;	
+	}
+	
+	.two-column-fluid .image-column .image-box{
+		display:block;	
+	}
+	
+	.features-listing-section .title-column h3{
+		font-size:16px;	
+	}
+	
+	.features-listing-section .carousel-outer{
+		margin-bottom:40px;	
+	}
+	
+	.padd-top-140{
+		padding-top:90px !important;	
+	}
+	
+	
+}
+
+@media only screen and (min-width: 768px){
+	.main-menu .navigation > li > ul,
+	.main-menu .navigation > li > ul > li > ul{
+		display:block !important;
+		visibility:hidden;
+		opacity:0;
+	}
+}
+
+@media only screen and (max-width: 1023px){
+	
+	
+	
+	.page-wrapper{
+		overflow:hidden;	
+	}
+	
+	.main-header .main-box .logo-box {
+		position:relative;
+		left:0px;
+		top:0px;
+		right:0px;
+		bottom:0px;
+		width:150px;
+		margin:0px;
+		text-align:left;
+	}
+	
+	.main-header .nav-outer,
+	.nav-outer .main-menu{
+		display:none;
+	}
+	
+	.main-header .nav-toggler{
+		display:block;
+	}
+	
+	.main-header .search-box-btn{
+		right:80px;	
+	}
+	
+	.main-header .shop-cart-btn{
+		right:120px;	
+	}
+	
+	.why-choose-yoga .features-outer{
+		background-image:none !important;
+		padding-bottom:30px;	
+	}
+	
+	.what-we-do .left-column .feature-block .inner-box,
+	.what-we-do .right-column .feature-block .inner-box{
+		max-width:none !important;
+		margin:0px !important;	
+	}
+	
+	.main-footer .footer-widget{
+		padding-left:0px;	
+	}
+	
+	.video-section .outer-box .column{
+		padding:0px 20px;	
+	}
+	
+	.call-to-action h3{
+		font-size:22px;
+		padding-bottom:20px;
+	}
+	
+	.call-to-action,
+	.call-to-action .text-right{
+		text-align:center;	
+	}
+	
+	.sec-title h2,
+	.featured-item .inner-box h3 .price,
+	.featured-item .inner-box h3{
+		font-size:24px;	
+	}
+	
+	.gallery-single-post .info-column{
+		padding-left:15px;	
+	}
+	
+	.sidebar-page-container .blog-section{
+		padding-right:0px !important;	
+	}
+	
+	.contact-section .info-block{
+		text-align:center;
+		padding-right:0px;	
+	}
+	
+	.contact-section .info-block .icon-box{
+		position:relative;
+		top:0px;
+		right:0px;
+		margin:0px auto 20px;	
+	}
+	
+	.quote-section{
+		padding:120px 0px;	
+	}
+	
+	.quote-section .quote-text{
+		font-size:22px;	
+	}
+	
+	.contact-section .form-column{
+		padding-left:15px;	
+	}
+	
+	.features-listing-section .title-column .inner{
+		padding-top:0px;
+		padding-bottom:50px;	
+	}
+	
+	.features-listing-section .owl-nav{
+		top:70px;	
+	}
+	
+	.featured-post .content-column .inner-box{
+		padding:30px 20px;	
+	}
+	
+	.about-section .skills-column{
+		padding-right:15px;	
+	}
+	
+}
+
+@media only screen and (max-width: 767px){
+	.main-header{
+		position:relative;
+		margin:0px !important;
+		background:#212121;	
+	}
+	
+	.header-upper .logo-outer {
+		position:relative;
+		left:0px;
+		top:0px;
+		right:0px;
+		bottom:0px;
+		width:100%;
+		margin:0px;
+	}
+	
+	.default-portfolio-item.masonry-item.big-item,
+	.default-portfolio-item.masonry-item.small-item{
+		width:100%;	
+	}
+	
+	.main-header .header-top .top-right ul li,
+	.main-header .header-top .top-left ul li{
+		margin:0px 5px;	
+	}
+	
+	.what-we-do .left-column .feature-block .inner-box,
+	.what-we-do .right-column .feature-block .inner-box{
+		max-width:450px !important;
+		margin:0px auto !important;
+		text-align:center !important;
+		padding:0px !important;
+		float:none;	
+	}
+	
+	.what-we-do .left-column .feature-block .icon-box,
+	.what-we-do .right-column .feature-block .icon-box{
+		position:relative !important;
+		left:0px !important;
+		top:0px !important;
+		right:0px !important;
+		bottom:0px !important;
+		margin:0 auto 20px !important;
+	}
+	
+	.main-slider .tp-caption{
+		display:none !important;	
+	}
+	
+	.main-slider .tparrows.preview3::after{
+		top:0px;	
+	}
+	
+	.featured-three-column{
+		margin-top:0px !important;
+		padding-top:80px !important;	
+	}
+	
+	.search-popup .search-form fieldset input[type="search"]{
+		font-size:15px;
+		padding:10px 15px;
+		border-radius:0px;
+	}
+	
+	.search-popup .search-form fieldset input[type="submit"]{
+		position:relative;
+		width:100%;
+		border-radius:0px;
+	}
+	
+	.two-column-fluid .image-column{
+		padding:0px 15px;	
+	}
+	
+	.two-column-fluid .content-column{
+		padding:30px 20px;	
+	}
+	
+	.default-two-column .content-column .title h2,
+	.sec-title h2,
+	.two-column-fluid .content-column .title h2,
+	.welcome-section h2{
+		font-size:26px;	
+	}
+	
+}
+
+@media only screen and (max-width: 599px){
+	
+	.sidebar-page-container .comments-area .reply-btn{
+		position:relative !important;
+		top:5px !important;
+		right:0px;	
+	}
+	
+	.blog-news-section .post-share-options .pull-right.text-left{
+		float:left !important;
+		padding-top:10px !important;
+		width:100%;
+	}
+	
+	.tabbed-events .event-btn .event-date{
+		position:relative;
+		left:0px;
+		top:0px;
+		width:100%;
+		padding:15px 10px;	
+	}
+	
+	.tabbed-events .event-btn .event-date .day{
+		display:inline-block;
+		padding-right:10px;	
+	}
+	
+	.tabbed-events .event-btn{
+		padding-right:0px;	
+	}
+	
+	.tabbed-events .event-btn:after{
+		display:none;	
+	}
+	
+	.tabbed-events .event-btn.active{
+		border:4px solid #0060b2;	
+	}
+	
+	.pricing-column .inner-box .priceing-header .price{
+		font-size:32px;	
+	}
+	
+	.prod-tabs .reviews-container .review-box{
+		padding-left:0px;	
+	}
+	
+	.prod-tabs .reviews-container .rev-thumb{
+		position:relative;
+		left:0px;
+		top:0px;
+		margin-bottom:20px;
+	}
+	
+	.prod-tabs .tab-btns .tab-btn{
+		display:block;
+		margin:0px 0px 10px;
+		text-align:center;	
+	}
+	
+	.form-box.bordered-form{
+		padding:20px 15px;	
+	}
+	
+	.sidebar-page .comments-area .reply-comment{
+		margin-left:0px;	
+	}
+	
+	.quote-section .quote-text,
+	.quote-section .quote-author{
+		text-align:center;	
+	}
+	
+	.event-form-box .form-group{
+		margin:0px 0px 20px;
+		display:block;
+		width:100%;	
+	}
+	
+	.sec-title .desc-text{
+		font-size:15px;	
+	}
+}
+
+@media only screen and (max-width: 499px) {
+	
+	.main-header .main-box .logo-box .logo img{
+		max-width:70%;
+		height:auto;
+	}
+	
+	.products-gallery .filter-tabs .filter{
+		display:block;	
+	}
+	
+	.sidebar-page .comments-area .reply-comment{
+		margin-left:0px;	
+	}
+	
+	.sidebar-page .comments-area .comment{
+		padding-left:0px;	
+	}
+	
+	.sidebar-page .comments-area .comment .author-thumb{
+		position:relative;
+		left:0px;
+		top:0px;
+		margin-bottom:20px;	
+	}
+	
+	.appt-form-box{
+		padding:30px 20px 15px;	
+	}
+}
