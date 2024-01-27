@@ -3745,3 +3745,12 @@ ul,li{
 	display:block;
 	width:100%;	
 }
+
+.banner {
+	height: auto; 
+	text-align: center;
+	p {
+		color: gold;
+		font-size: large;
+	}
+}
