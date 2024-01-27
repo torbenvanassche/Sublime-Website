@@ -1,19 +1,19 @@
-(function($) {
-	
+(function ($) {
+
 	"use strict";
-	
-	
+
+
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
-		if($('.preloader').length){
+		if ($('.preloader').length) {
 			$('.preloader').delay(200).fadeOut(500);
 		}
 	}
-	
-	
+
+
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
-		if($('.main-header').length){
+		if ($('.main-header').length) {
 			var windowpos = $(window).scrollTop();
 			if (windowpos >= 200) {
 				$('.main-header').addClass('fixed-header');
@@ -24,41 +24,41 @@
 			}
 		}
 	}
-	
+
 	headerStyle();
-	
-	
+
+
 	//Submenu Dropdown Toggle
-	if($('.main-header li.dropdown ul').length){
+	if ($('.main-header li.dropdown ul').length) {
 		$('.main-header li.dropdown').append('<div class="dropdown-btn"></div>');
-		
+
 		//Dropdown Button
-		$('.main-header li.dropdown .dropdown-btn').on('click', function() {
+		$('.main-header li.dropdown .dropdown-btn').on('click', function () {
 			$(this).prev('ul').slideToggle(500);
 		});
-		
+
 		//Disable dropdown parent link
-		$('.navigation li.dropdown > a').on('click', function(e) {
+		$('.navigation li.dropdown > a').on('click', function (e) {
 			e.preventDefault();
 		});
 	}
-	
-	
+
+
 	//Search Popup
-	if($('#search-popup').length){
-		
+	if ($('#search-popup').length) {
+
 		//Show Popup
-		$('.search-box-btn').on('click', function() {
+		$('.search-box-btn').on('click', function () {
 			$('#search-popup').addClass('popup-visible');
 		});
-		
+
 		//Hide Popup
-		$('.close-search').on('click', function() {
+		$('.close-search').on('click', function () {
 			$('#search-popup').removeClass('popup-visible');
 		});
 	}
-	
-	
+
+
 	//Hidden Bar Menu Config
 	function hiddenBarMenuConfig() {
 		var menuWrap = $('.hidden-bar .side-menu');
@@ -73,29 +73,29 @@
 			$(this).on('click', function () {
 				$(this).parent() // return parent of .btn.expander (a) 
 					.parent() // return parent of a (li)
-						.children('ul').slideToggle();
-	
+					.children('ul').slideToggle();
+
 				// adding class to expander container
 				$(this).parent().toggleClass('current');
 				// toggling arrow of expander
 				$(this).find('i').toggleClass('fa-minus fa-bars');
-	
+
 				return false;
-	
+
 			});
 		});
 	}
-	
+
 	hiddenBarMenuConfig();
-	
-	
-	
+
+
+
 	//Custom Scroll for Hidden Sidebar
 	if ($('.hidden-bar-wrapper').length) {
 		$('.hidden-bar-wrapper').mCustomScrollbar();
 	}
-	
-	
+
+
 	//Hidden Bar Toggler
 	if ($('.hidden-bar-closer').length) {
 		$('.hidden-bar-closer').on('click', function () {
@@ -107,171 +107,171 @@
 			$('.hidden-bar').addClass('visible-sidebar');
 		});
 	}
-	
-	
+
+
 	//Revolution Slider
-	if($('.main-slider .tp-banner').length){
+	if ($('.main-slider .tp-banner').length) {
 
 		jQuery('.main-slider .tp-banner').show().revolution({
 			//dottedOverlay:"yes",
-			delay:10000,
-			startwidth:1200,
-			startheight:900,
-			hideThumbs:600,
-			
-			thumbWidth:80,
-			thumbHeight:50,
-			thumbAmount:5,
-			
-			navigationType:"bullet",
-			navigationArrows:"0",
-			navigationStyle:"preview3",
-			
-			touchenabled:"on",
-			onHoverStop:"off",
-			
+			delay: 10000,
+			startwidth: 1200,
+			startheight: 900,
+			hideThumbs: 600,
+
+			thumbWidth: 80,
+			thumbHeight: 50,
+			thumbAmount: 5,
+
+			navigationType: "bullet",
+			navigationArrows: "0",
+			navigationStyle: "preview3",
+
+			touchenabled: "on",
+			onHoverStop: "off",
+
 			swipe_velocity: 0.7,
 			swipe_min_touches: 1,
 			swipe_max_touches: 1,
 			drag_block_vertical: false,
-			
-			parallax:"mouse",
-			parallaxBgFreeze:"on",
-			parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
-			
-			keyboardNavigation:"off",
-			
-			navigationHAlign:"center",
-			navigationVAlign:"bottom",
-			navigationHOffset:0,
-			navigationVOffset:20,
-			
-			soloArrowLeftHalign:"left",
-			soloArrowLeftValign:"center",
-			soloArrowLeftHOffset:20,
-			soloArrowLeftVOffset:0,
-			
-			soloArrowRightHalign:"right",
-			soloArrowRightValign:"center",
-			soloArrowRightHOffset:20,
-			soloArrowRightVOffset:0,
-			
-			shadow:0,
-			fullWidth:"on",
-			fullScreen:"off",
-			
-			spinner:"spinner4",
-			
-			stopLoop:"off",
-			stopAfterLoops:-1,
-			stopAtSlide:-1,
-			
-			shuffle:"off",
-			
-			autoHeight:"off",
-			forceFullWidth:"on",
-			
-			hideThumbsOnMobile:"on",
-			hideNavDelayOnMobile:1500,
-			hideBulletsOnMobile:"on",
-			hideArrowsOnMobile:"on",
-			hideThumbsUnderResolution:0,
-			
-			hideSliderAtLimit:0,
-			hideCaptionAtLimit:0,
-			hideAllCaptionAtLilmit:0,
-			startWithSlide:0,
-			videoJsPath:"",
+
+			parallax: "mouse",
+			parallaxBgFreeze: "on",
+			parallaxLevels: [7, 4, 3, 2, 5, 4, 3, 2, 1, 0],
+
+			keyboardNavigation: "off",
+
+			navigationHAlign: "center",
+			navigationVAlign: "bottom",
+			navigationHOffset: 0,
+			navigationVOffset: 20,
+
+			soloArrowLeftHalign: "left",
+			soloArrowLeftValign: "center",
+			soloArrowLeftHOffset: 20,
+			soloArrowLeftVOffset: 0,
+
+			soloArrowRightHalign: "right",
+			soloArrowRightValign: "center",
+			soloArrowRightHOffset: 20,
+			soloArrowRightVOffset: 0,
+
+			shadow: 0,
+			fullWidth: "on",
+			fullScreen: "off",
+
+			spinner: "spinner4",
+
+			stopLoop: "off",
+			stopAfterLoops: -1,
+			stopAtSlide: -1,
+
+			shuffle: "off",
+
+			autoHeight: "off",
+			forceFullWidth: "on",
+
+			hideThumbsOnMobile: "on",
+			hideNavDelayOnMobile: 1500,
+			hideBulletsOnMobile: "on",
+			hideArrowsOnMobile: "on",
+			hideThumbsUnderResolution: 0,
+
+			hideSliderAtLimit: 0,
+			hideCaptionAtLimit: 0,
+			hideAllCaptionAtLilmit: 0,
+			startWithSlide: 0,
+			videoJsPath: "",
 			fullScreenOffsetContainer: ""
-	  });
-		
+		});
+
 	}
-	
-	
+
+
 	//Features Carousel
 	if ($('.features-carousel').length) {
 		$('.features-carousel').owlCarousel({
-			loop:true,
-			margin:30,
-			nav:true,
+			loop: true,
+			margin: 30,
+			nav: true,
 			smartSpeed: 500,
 			autoplay: 5000,
-			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
-			responsive:{
-				0:{
-					items:1
+			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+			responsive: {
+				0: {
+					items: 1
 				},
-				600:{
-					items:2
+				600: {
+					items: 2
 				},
-				1024:{
-					items:3
+				1024: {
+					items: 3
 				},
-				1200:{
-					items:3
+				1200: {
+					items: 3
 				}
 			}
 		});
 	}
-	
-	
+
+
 	//Sponsors Carousel
 	if ($('.sponsors-carousel').length) {
 		$('.sponsors-carousel').owlCarousel({
-			loop:true,
-			margin:30,
-			nav:true,
+			loop: true,
+			margin: 30,
+			nav: true,
 			smartSpeed: 500,
 			autoplay: 5000,
-			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
-			responsive:{
-				0:{
-					items:1
+			navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+			responsive: {
+				0: {
+					items: 1
 				},
-				600:{
-					items:3
+				600: {
+					items: 3
 				},
-				1024:{
-					items:4
+				1024: {
+					items: 4
 				},
-				1200:{
-					items:5
+				1200: {
+					items: 5
 				}
 			}
 		});
 	}
-	
-	
+
+
 	//Mixitup Gallery
-	if($('.filter-list').length){
+	if ($('.filter-list').length) {
 		$('.filter-list').mixItUp({});
 	}
-	
-	
+
+
 	//Progress Bar / Levels
-	if($('.progress-levels .progress-box .bar-fill').length){
-		$(".progress-box .bar-fill").each(function() {
+	if ($('.progress-levels .progress-box .bar-fill').length) {
+		$(".progress-box .bar-fill").each(function () {
 			var progressWidth = $(this).attr('data-percent');
-			$(this).css('width',progressWidth+'%');
-			$(this).parents('.progress-box').children('.percent').html(progressWidth+'%');
+			$(this).css('width', progressWidth + '%');
+			$(this).parents('.progress-box').children('.percent').html(progressWidth + '%');
 		});
 	}
-	
-	
+
+
 	//LightBox / Fancybox
-	if($('.lightbox-image').length) {
+	if ($('.lightbox-image').length) {
 		$('.lightbox-image').fancybox({
-			openEffect  : 'fade',
-			closeEffect : 'fade',
-			helpers : {
-				media : {}
+			openEffect: 'fade',
+			closeEffect: 'fade',
+			helpers: {
+				media: {}
 			}
 		});
 	}
-	
-	
+
+
 	//Contact Form Validation
-	if($('#contact-form').length){
+	if ($('#contact-form').length) {
 		$('#contact-form').validate({
 			rules: {
 				username: {
@@ -293,52 +293,63 @@
 			}
 		});
 	}
-	
-	
+
+
 	// Scroll to a Specific Div
-	if($('.scroll-to-target').length){
-		$(".scroll-to-target").on('click', function() {
+	if ($('.scroll-to-target').length) {
+		$(".scroll-to-target").on('click', function () {
 			var target = $(this).attr('data-target');
-		   // animate
-		   $('html, body').animate({
-			   scrollTop: $(target).offset().top
-			 }, 1000);
-	
+			// animate
+			$('html, body').animate({
+				scrollTop: $(target).offset().top
+			}, 1000);
 		});
 	}
-	
-	
+
+	// Scroll to a Specific Div
+	if ($('.scroll-to-div').length) {
+		$(".scroll-to-div").on('click', function () {
+			var target = $(this).attr('data-target');
+			var offset = Number(($(target)).attr('data-offset'));
+			// animate
+			$('html, body').animate({
+				scrollTop: $(target).offset().top + offset
+			}, 1000);
+		});
+	}
+
+
 	// Elements Animation
-	if($('.wow').length){
+	if ($('.wow').length) {
 		var wow = new WOW(
-		  {
-			boxClass:     'wow',      // animated element css class (default is wow)
-			animateClass: 'animated', // animation css class (default is animated)
-			offset:       0,          // distance to the element when triggering the animation (default is 0)
-			mobile:       true,       // trigger animations on mobile devices (default is true)
-			live:         true       // act on asynchronously loaded content (default is true)
-		  }
+			{
+				boxClass: 'wow',      // animated element css class (default is wow)
+				animateClass: 'animated', // animation css class (default is animated)
+				offset: 0,          // distance to the element when triggering the animation (default is 0)
+				mobile: true,       // trigger animations on mobile devices (default is true)
+				live: true       // act on asynchronously loaded content (default is true)
+			}
 		);
 		wow.init();
 	}
 
 
-/* ==========================================================================
-   When document is Scrollig, do
-   ========================================================================== */
-	
-	$(window).on('scroll', function() {
+	/* ==========================================================================
+	   When document is Scrollig, do
+	   ========================================================================== */
+
+	$(window).on('scroll', function () {
 		headerStyle();
 	});
-	
-/* ==========================================================================
-   When document is loading, do
-   ========================================================================== */
-	
-	$(window).on('load', function() {
+
+	/* ==========================================================================
+	   When document is loading, do
+	   ========================================================================== */
+
+	$(window).on('load', function () {
 		handlePreloader();
 	});
 
-	
+
 
 })(window.jQuery);
