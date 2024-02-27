@@ -3750,3 +3750,7 @@ ul,li{
 		font-size: large;
 	}
 }
+
+.scroll-to-div {
+	cursor: pointer;
+}
