@@ -315,6 +315,8 @@
 			$('html, body').animate({
 				scrollTop: $(target).offset().top + offset
 			}, 1000);
+
+			$('.hidden-bar').removeClass('visible-sidebar');
 		});
 	}
 
