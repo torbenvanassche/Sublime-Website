@@ -3770,11 +3770,11 @@ li {
 .banner {
 	height: auto;
 	text-align: center;
+}
 
-	p {
-		color: white;
-		font-size: large;
-	}
+.banner-text {
+	color: white;
+	font-size: large;
 }
 
 .text-shadow {
