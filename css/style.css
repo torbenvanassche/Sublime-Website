@@ -670,7 +670,7 @@ li {
 	margin-top: -15px;
 	line-height: 20px;
 	font-size: 11px;
-	color: #bea88b;
+	color: white;
 	border: 1px solid rgba(255, 255, 255, 0.20);
 }
 
@@ -722,7 +722,7 @@ li {
 	position: relative;
 	display: block;
 	padding: 3px 0px;
-	color: #c6c6c6;
+	color: whitesmoke;
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 24px;
@@ -3772,9 +3772,13 @@ li {
 	text-align: center;
 
 	p {
-		color: gold;
+		color: white;
 		font-size: large;
 	}
+}
+
+.text-shadow {
+	text-shadow: 2px 2px 5px black;
 }
 
 .scroll-to-div {
