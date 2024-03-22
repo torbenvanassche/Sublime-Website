@@ -3775,6 +3775,7 @@ li {
 .banner-text {
 	color: white;
 	font-size: large;
+	z-index: 100;
 }
 
 .text-shadow {
@@ -3814,4 +3815,8 @@ li {
 		padding-left: 10%;
 		padding-right: 10%;
 	}
+}
+
+.text-shadow {
+	text-shadow: 0px 0px 3px #000;
 }
